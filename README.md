@@ -1,7 +1,7 @@
 # hot-cold
 The 'Hot-cold' game using text embeddings (as a telegram bot) 
  
-The beta-version allows minimal gameplay, but it is still raw 
+The beta-version allows for minimal gameplay, but the project is still raw 
 After the target word is set (hardcoded in the script), players try to guess that word. All attempts are assigned a number R - their distance to the target in a text embedding. For a correct guess (when attempt == target), R equals zero, and otherwise it is a positive number. Players are notified when they are moving in the correct ('hot') or incorrect ('cold') direction: if R decreases or increases over time. After the game, the text embedding for all the attempts and the target is projected on a plane (pca-transformed into 2d) and sent to the players as 'their route' of the game. 
  
 Example gameplay:
