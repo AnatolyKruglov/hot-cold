@@ -43,4 +43,4 @@ HotCold, [07.08.2023 3:09]
 100°, congratulations!
 
 HotCold, [07.08.2023 3:09]
-![image](https://github.com/AnatolyKruglov/hot-cold/blob/main/photo_2023-08-16_12-15-22.jpg)
+![image](https://github.com/AnatolyKruglov/hot-cold/blob/main/photo_2023-08-16_12-15-22.jpg) 
