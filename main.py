@@ -42,7 +42,7 @@ class Game():
         else:
             return f'-{-temperature}°, FREEZING COLD!'
 
-bot = telebot.TeleBot('6337441024:AAEZja1zmak4ONxffNQpmICU5gSHhuKAgcc')
+bot = telebot.TeleBot('6337441024:AAEZja1zmak4ONxffNQpmICU5gSHhuKAgcc')  # I obviously revoked that token) but here is where it is inserted
 game = Game()
 
 # @bot.message_handler(commands=['set'])
