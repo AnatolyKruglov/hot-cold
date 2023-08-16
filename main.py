@@ -52,7 +52,7 @@ game = Game()
 
 @bot.message_handler(commands=['start'])
 def send_welcome(message):
-    bot.reply_to(message, "Отгадайте слово по подсказкам типа 'тепло-холодно'")
+    bot.reply_to(message, "Guess the word with hints 'hot-cold'")
     word = 'green'  # а надо чтение бд, где юзеры загадывают друг другу слова
     print(word)
     game.set(word)
@@ -61,7 +61,7 @@ def send_welcome(message):
 def get_text_messages(message):
     ans = game.guess(message.text)
     bot.reply_to(message, ans)
-    if ans == '100°, Правильно, победа!':
+    if ans == '100°, congratulations!':
         path = game.draw_map()
         with open(path, 'rb') as f:
             bot.send_photo(message.chat.id, f)
